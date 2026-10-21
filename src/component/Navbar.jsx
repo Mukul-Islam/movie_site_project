@@ -1,5 +1,6 @@
 
 import { SiThemoviedatabase } from "react-icons/si";
+import { Link } from "react-router";
 
 const Navbar = () => {
     // const [click,setClick] = useState('');
@@ -21,7 +22,7 @@ const Navbar = () => {
                </div>
                 <div className='flex justify-between items-center gap-3'>
                     
-                    <button className='bg-green-400 p-3 rounded-2xl cursor-pointer '>Browser Movies</button>
+                    <Link to='/moviePage' className='bg-green-400 p-3 rounded-2xl cursor-pointer '>Browser Movies</Link>
                 </div>
             </div>
             </div>
