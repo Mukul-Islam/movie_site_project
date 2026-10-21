@@ -1,20 +1,31 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router';
+
+import { SiThemoviedatabase } from "react-icons/si";
 
 const Navbar = () => {
-    const [click,setClick] = useState('');
-    function heroChanged(){
+    // const [click,setClick] = useState('');
+    // function heroChanged(){
 
-    }
+    // }
     return (
-        <div>
-            <h1>This is Navbar section</h1>
-           
-            <Link to='/about'>
-             <button 
-            className='border p-1 bg-amber-100 cursor-pointer'> 
-            clicked to hero section</button>
-            </Link>
+        <div className=''>
+
+            <div className='shrink-0 bg-amber-200 '>
+                <div className=' p-3 max-w-[1580px] mx-auto flex justify-between items-center'>
+                <div className='flex gap-2 text-2xl font-bold  items-center'>
+                    <SiThemoviedatabase />
+                    MovieBD
+                </div>
+               <div className='flex justify-center items-center gap-4 font-semibold'>
+                <h1>Home</h1>
+                    <h1>Movies</h1>
+               </div>
+                <div className='flex justify-between items-center gap-3'>
+                    
+                    <button className='bg-green-400 p-3 rounded-2xl cursor-pointer '>Browser Movies</button>
+                </div>
+            </div>
+            </div>
+          
         </div>
     );
 };
